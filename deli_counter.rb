@@ -1,9 +1,17 @@
 # Write your code here.
-def take_a_number(array,person)
-  array << person
-  x= array.length
-  puts "Welcome, #{person}. You are number #{x} in line."
+@ticket_number = 0
+def take_a_number(array)
+  @ticket_number+=1
+  array << @ticket_number
+  puts "Welcome, you are number #{@ticket_number}."
 end
+
+line = []
+take_a_number(line)
+take_a_number(line)
+take_a_number(line)
+
+
 
 def line(array)
     if array.length == 0
