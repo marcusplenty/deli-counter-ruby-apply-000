@@ -6,11 +6,14 @@ def take_a_number(array)
   puts "Welcome, you are number #{@ticket_number}."
 end
 
-line = []
-take_a_number(line)
-take_a_number(line)
-take_a_number(line)
-
+arr = []
+take_a_number(arr)
+take_a_number(arr)
+take_a_number(arr)
+now_serving(arr)
+now_serving(arr)
+now_serving(arr)
+take_a_number(arr)
 
 
 def line(array)
