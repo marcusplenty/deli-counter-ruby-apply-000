@@ -6,6 +6,15 @@ def take_a_number(array)
   puts "Welcome, you are number #{@ticket_number}."
 end
 
+def now_serving(array)
+  if array.length == 0
+      puts "There is nobody waiting to be served!"
+  else
+      puts "Currently serving #{array[0]}."
+      array.shift()
+  end
+end
+
 arr = []
 take_a_number(arr)
 take_a_number(arr)
@@ -29,11 +38,3 @@ def line(array)
     puts x
 end
 
-def now_serving(array)
-  if array.length == 0
-      puts "There is nobody waiting to be served!"
-  else
-      puts "Currently serving #{array[0]}."
-      array.shift()
-  end
-end
